@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>AI Personal Shopper</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AI Personal Shopper</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Gift Ideas</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <input type="text" id="search-input" placeholder="Enter your criteria">
+<button id="search-button">Search</button>
+<div id="recommendations"></div>
+        <h1>Let AI find the perfect products for you.</h1>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>
+                <h3>Step 1: User Input</h3>
+                <p>Users provide their criteria, preferences, or a description of what they are looking for. For example, they can type in keywords, set filters, or describe their ideal product.</p>
+            </li>
+            <li>
+                <h3>Step 2: AI Recommendation</h3>
+                <p>Our AI system analyzes the user's input using advanced algorithms and machine learning. It matches the input with our extensive database of products and generates tailored recommendations.</p>
+            </li>
+            <li>
+                <h3>Step 3: Display Recommendations</h3>
+                <p>The AI-generated recommendations are displayed on the screen. Users can explore the suggested products, view details, and decide which ones interest them.</p>
+            </li>
+            <li>
+                <h3>Step 4: User Feedback</h3>
+                <p>We encourage user feedback to improve our recommendations. Users can rate and provide feedback on the suggested products, helping us refine future suggestions.</p>
+            </li>
+        </ol>
+    </section>
+    <main>
+        <section id="shop">
+            <h2>Shop</h2>
+            <p>Welcome to our online store, where you can find a wide range of products to meet your needs. Whether you're looking for electronics, fashion, books, or more, we have you covered. Use our AI-powered search to find the perfect products for you.</p>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="product-search-input" placeholder="Search for products...">
+                <button id="product-search-button">Search</button>
+            </div>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="/images/image1.jpg" alt="Product 1">
+                    <h3>Smartwatch Pro</h3>
+                    <p>Stay connected and track your fitness with this feature-rich smartwatch. Monitor your heart rate, receive notifications, and track your workouts.</p>
+                    <p>Price: $149.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <img src="/images/image2.jpeg" alt="Product 2">
+                    <h3>Leather Laptop Bag</h3>
+                    <p>Stylish and functional, this leather laptop bag is perfect for professionals on the go. It fits laptops up to 15 inches and has multiple compartments.</p>
+                    <p>Price: $79.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <img src="/images/image3.jpg" alt="Product 3">
+                    <h3>Wireless Bluetooth Earbuds</h3>
+                    <p>Enjoy crystal-clear audio and complete freedom with these wireless earbuds. They come with a charging case for extended use.</p>
+                    <p>Price: $69.99</p>
+                </div>
+            
+                <div class="product-card">
+                    <img src="/images/image4.jpg" alt="Product 4">
+                    <h3>Hardcover Bestseller Book</h3>
+                    <p> Dive into this gripping bestseller by a renowned author. Perfect for book enthusiasts and those who love thrilling stories.</p>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product-card">
+                    <img src="/images/image5.jpg" alt="Product 5">
+                    <h3>Gourmet Coffee Sampler</h3>
+                    <p>Discover a world of flavors with this gourmet coffee sampler. It includes a variety of premium coffee beans from around the world.</p>
+                    <p>Price:  $29.99</p>
+                </div>
+            
+                <div class="product-card">
+                    <img src="/images/image6.jpg" alt="Product 6">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <p>Take your music anywhere with this compact and powerful Bluetooth speaker. It offers high-quality sound and long battery life.</p>
+                    <p>Price: $49.99</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="gift-ideas">
+            <h2>Gift Ideas</h2>
+             <p>Need inspiration for the perfect gift? Our AI-powered gift finder can help. Whether it's a birthday, anniversary, or special occasion, simply describe the recipient and the occasion, and let our AI suggest thoughtful gift ideas.</p>
+             <div class="gift-recommendation">
+                <label for="recipient-description">Recipient Description:</label>
+                <input type="text" id="recipient-description" placeholder="Describe the recipient...">
+                <label for="occasion">Occasion:</label>
+                <input type="text" id="occasion" placeholder="e.g., Birthday, Anniversary...">
+                <button id="gift-recommendation-button">Get Gift Ideas</button>
+            </div>
+            <div class="gift-suggestions">
+                <div class="gift-card">
+                    <img src="/images/gift-image1.jpg" alt="Gift Idea 1">
+                    <h3>For a Coffee Lover</h3>
+                    <p>Know someone who can't start their day without coffee? Consider gifting them a gourmet coffee sampler with beans from different regions.</p>
+                </div>
+        
+                <div class="gift-card">
+                    <img src="/images/gift-image2.jpg" alt="Gift Idea 2">
+                    <h3>Tech Enthusiast's Dream</h3>
+                    <p>If your friend loves gadgets, surprise them with the latest wireless Bluetooth earbuds that offer superior sound quality.</p>
+                </div>
+                <div class="gift-card">
+                    <img src="/images/gift-image3.jpg" alt="Gift Idea 3">
+                    <h3>Fitness Fanatic's Companion</h3>
+                    <p>Help your fitness-focused family member achieve their goals with a high-end smartwatch that tracks their progress.</p>
+                </div>
+            
+                <div class="gift-card">
+                    <img src="/images/gift-image4.jpg" alt="Gift Idea 4">
+                    <h3>Bookworm's Delight</h3>
+                    <p> For the avid reader, a hardcover bestseller from their favorite author makes a thoughtful gift that promises hours of reading pleasure.</p>
+                </div>
+            
+                <div class="gift-card">
+                    <img src="/images/gift-image5.jpg" alt="Gift Idea 5">
+                    <h3>Professional and Stylish</h3>
+                    <p> Impress your colleague with a sleek leather laptop bag that combines style and functionality for their daily commute.</p>
+                </div>
+            
+                <div class="gift-card">
+                    <img src="/images/gift-image6.jpg" alt="Gift Idea 6">
+                    <h3>Music on the Go</h3>
+                    <p>Surprise your music-loving sibling with a portable Bluetooth speaker that ensures they can enjoy their favorite tunes wherever they are.</p>
+                </div>
+        
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-media">
+            <h3>Connect with Us on Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/YourPage" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/YourPage" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>&copy; 2023 AI Personal Shopper</p>
+    </footer>
+<script>
+    const aiApiUrl = 'https://api.example.com/ai-recommendations';
+  
+    async function fetchAIRecommendations(input) {
+      try {
+        const response = await fetch(aiApiUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ input }),
+        });
+  
+        if (!response.ok) {
+          throw new Error('AI API request failed');
+        }
+  
+        const data = await response.json();
+        displayRecommendations(data); // Call a function to display the recommendations
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+  
+    // Function to display AI-generated recommendations
+    function displayRecommendations(data) {
+      const recommendationsContainer = document.getElementById('recommendations');
+  
+      // Clear previous recommendations
+      recommendationsContainer.innerHTML = '';
+  
+      // Loop through the recommendations and create HTML elements to display them
+      data.recommendations.forEach((recommendation) => {
+        const productCard = document.createElement('div');
+        productCard.classList.add('product-card');
+  
+        const productName = document.createElement('h3');
+        productName.textContent = recommendation.name;
+  
+        const productDescription = document.createElement('p');
+        productDescription.textContent = recommendation.description;
+  
+        const productPrice = document.createElement('p');
+        productPrice.textContent = `$${recommendation.price}`;
+  
+        productCard.appendChild(productName);
+        productCard.appendChild(productDescription);
+        productCard.appendChild(productPrice);
+  
+        recommendationsContainer.appendChild(productCard);
+      });
+    }
+  
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+  
+    searchButton.addEventListener('click', () => {
+      const userInput = searchInput.value.trim();
+      if (userInput) {
+        fetchAIRecommendations(userInput);
+      }
+    });
+  </script>  
+</body>
+</html>

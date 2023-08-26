@@ -1,0 +1,564 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #e7e7d8;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+    transition: all 200ms linear;
+}
+
+
+header {
+    background-color: #f05522;
+    color: #fff;
+    padding: 10px 0;
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color on the hero section */
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    position: relative; /* To position the overlay */
+}
+
+/* Background Color Overlay */
+.hero::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* To place the overlay behind the content */
+}
+.logo{
+    font-size: 24px;
+    padding: 10px 20px;
+}
+/* Style the hero section */
+.hero {
+    background-image: url('/images/background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* Text color for the content */
+}
+
+/* Style the search input */
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Style the search button */
+#search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the recommendations container */
+#recommendations {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f6390a;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:#f4edeb
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li:hover{
+    transition: 0.3s ease;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a0300;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Product Card Container */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.product-card h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Description */
+.product-card p {
+    font-size: 0.9rem;
+    color: #040404;
+}
+
+/* Product Card Price */
+.product-card p.price {
+    font-weight: bold;
+    color: #090909;
+}
+#gift-ideas{
+    background-color: #161515;
+}
+
+#gift-ideas h2 {
+    font-size: 2rem;
+    color: #c23737;
+    margin-bottom: 20px;
+}
+
+#gift-ideas p {
+    font-size: 1rem;
+    color: #0f0f0f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gift Card Container */
+.gift-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gift-card:hover {
+    transform: scale(1.05);
+}
+
+/* Gift Card Image */
+.gift-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Gift Card Title */
+.gift-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Gift Card Description */
+.gift-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+/* Footer Container */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Style for social media icons in the footer */
+.social-media ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+/* Style for individual social media icons */
+.social-media a i {
+    font-size: 24px; 
+    color: #efefef; 
+    transition: color 0.3s; 
+}
+
+/* Change icon color on hover */
+.social-media a:hover i {
+    color: #007bff; 
+}
+
+/* Footer Links */
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+/* Copyright Text */
+footer p {
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.how-it-works ol {
+    list-style: none;
+    padding: 0;
+}
+
+.how-it-works li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.how-it-works h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+.how-it-works p {
+    font-size: 1rem;
+    color: #777;
+}
+/* Shop Section */
+#shop {
+    background-color: #fff;
+    padding: 40px;
+    background-image: url('images/background2.png');
+}
+
+#shop h2 {
+    font-size: 2rem;
+    color: #fdf8f8;
+    margin-bottom: 20px;
+}
+#shop p {
+    font-size: 1rem;
+    color: ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px; /* Set a maximum width for the search bar */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Style the magnifying glass icon */
+.fa-magnifying-glass {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 10px; /* Add space between the icon and input field */
+    color: #333; /* Change the color of the icon */
+}
+
+/* Style the search input */
+#product-search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Style the search button */
+#product-search-button {
+    background-color: #cf24ed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Change button color on hover */
+#product-search-button:hover {
+    background-color: #4adeec;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.product-card p.price {
+    font-weight: bold;
+    color: #e44d26;
+}
+#gift-ideas{
+    background-image: url('images/back3.png');
+}
+
+
+.gift-suggestions {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+/* Gift Idea Card Styles */
+.gift-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gift-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gift-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gift-card p {
+    font-size: 14px;
+}
+#gift-ideas h2{
+    color: #0b0b0b;
+}
+
+/* Style the gift recommendation container */
+.gift-recommendation {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style the labels for the input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#333;
+    font-size: 16px;
+}
+
+/* Style the input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the button */
+#gift-recommendation-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#gift-recommendation-button:hover {
+    background-color: #0056b3;
+}
+
+/* Shop Section Background Color */
+#shop {
+    background-color: #F2F2F2; /* Change the background color here as well */
+}
+
+/* Product List Container (horizontal arrangement) */
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+/* Product Card Styles */
+.product-card {
+    width: calc(32% - 10px); 
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+}
